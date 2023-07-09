@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ECHO+ - Welcome</title>
+    <link rel="icon" href="tab-icon.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            background-image: url('bg.png');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 150px auto;
+            padding: 40px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+           
+            
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            animation: scaleIn 0.6s ease-in-out;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+            animation: slideInLeft 0.6s ease-in-out;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+            animation: slideInRight 0.6s ease-in-out;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            animation: slideInUp 0.6s ease-in-out;
+        }
+        .option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
+            transition: transform 0.3s;
+        }
+        .option:hover {
+            transform: translateY(-5px);
+        }
+        .option img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .option span {
+            font-size: 16px;
+            color: #555;
+        }
+        .continue-button {
+            display: inline-block;
+            padding: 14px 28px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 40px;
+            transition: background-color 0.3s;
+        }
+        .continue-button:hover {
+            background-color: #45a049;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="icon.png" alt="App Icon" class="app-icon">
+        <h1>Welcome to Echo+</h1>
+        <p>Discover and share moments with our innovative platform.</p>
+     
+        <a href="https://echoai.netlify.app/" class="continue-button">Continue</a>
+    </div>
+</body>
+</html>
